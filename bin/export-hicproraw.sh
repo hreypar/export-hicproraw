@@ -30,7 +30,7 @@ done
 # we didn't copy before because their names
 # were a problem to step 2
 #
-find -L data/
+find -L data/ \
 	-type f \
 	-name "*.matrix" \
 	-not -name "*iced*" \
