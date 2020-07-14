@@ -16,7 +16,8 @@ find -L data/ \
 	-name "*.bed" \
 	-or -name "*.matrix" \
 	-and -not -name "*iced*" \) \
- 	-exec cp -t results/ {} +
+	-exec mv -t results/ {} +
+# 	-exec cp -t results/ {} +
 
 # step 2 is figure out the files resolutions
 #
