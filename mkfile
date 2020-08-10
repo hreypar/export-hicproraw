@@ -12,11 +12,11 @@
 #
 # step 1 is move bed files from data to results
 #
-copy_bed:V:	data/
-	mkdir -p results
-	find -L data/ \
-		-type f \
-		-name "*.bed" \
-		-exec \
-			sh -c 'mv {} results/' \;
+#copy_bed:V:	data/
+#	mkdir -p results
+#	find -L data/ \
+#		-type f \
+#		-name "*.bed" \
+#		-exec \
+#			sh -c 'mv {} results/' \;
 
