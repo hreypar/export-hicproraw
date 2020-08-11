@@ -16,8 +16,8 @@ find -L data/ \
 	-name "*.bed" \
 	-or -name "*.matrix" \
 	-and -not -name "*iced*" \) \
-	-exec mv -t results/ {} +
-# 	-exec cp -t results/ {} +
+#	-exec mv -t results/ {} +
+ 	-exec cp -t results/ {} +
 
 # step 2 is figure out the files resolutions
 #
@@ -31,7 +31,7 @@ do
 	resolution_dir="results/$directories_prefix-$r"
 	mkdir -p $resolution_dir
 	
-	mv -t $resolution_dir results/*${r}.matrix
-	mv -t $resolution_dir results/*${r}_abs.bed
+	mv -t $resolution_dir results/*_${r}.matrix
+	mv -t $resolution_dir results/*_${r}_abs.bed
 done
 
